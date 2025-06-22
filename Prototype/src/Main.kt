@@ -1,3 +1,8 @@
+import nodes.implementations.Directory
+import nodes.implementations.File
+import repositories.abstractRepository.Repository
+import repositories.implementations.GitHubRepository
+
 fun main() {
     val mainFile = File("Main.kt")
     val srcDirectory = Directory("src")

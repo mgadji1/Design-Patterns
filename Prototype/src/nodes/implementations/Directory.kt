@@ -1,3 +1,7 @@
+package nodes.implementations
+
+import nodes.abstractClasses.Node
+
 class Directory(name : String) : Node(name) {
     private val content : MutableList<Node> = mutableListOf()
 

@@ -1,3 +1,9 @@
+package repositories.abstractRepository
+
+import nodes.abstractClasses.Node
+import nodes.implementations.Directory
+import nodes.implementations.File
+
 abstract class Repository(protected val name : String) {
     private val content : MutableList<Node> = mutableListOf()
 

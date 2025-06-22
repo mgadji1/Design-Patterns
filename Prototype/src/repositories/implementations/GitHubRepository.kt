@@ -1,3 +1,7 @@
+package repositories.implementations
+
+import repositories.abstractRepository.Repository
+
 class GitHubRepository(name : String) : Repository(name) {
     override fun getInfo() {
         println("This is a GitHub repository or a clone")
