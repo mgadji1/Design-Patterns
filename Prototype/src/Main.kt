@@ -11,10 +11,14 @@ fun main() {
     srcDirectory.addFile(mainFile)
     prototypeDirectory.addDirectory(srcDirectory)
 
-    val gitHubRepository : Repository = GitHubRepository("Design Patterns")
+    val gitHubRepository : Repository = GitHubRepository("Design Patterns", mutableListOf())
     gitHubRepository.addDirectory(prototypeDirectory)
 
     val gitLabRepository : Repository = gitHubRepository.cloneRepository()
 
     gitLabRepository.getInfo()
+
+    gitHubRepository.showContent()
+
+    gitLabRepository.showContent()
 }
