@@ -1,3 +1,6 @@
+import containers.ImageContainer
+import loader.implementations.custom.CustomImageLoader
+
 fun main() {
     val customImageLoader = CustomImageLoader()
 

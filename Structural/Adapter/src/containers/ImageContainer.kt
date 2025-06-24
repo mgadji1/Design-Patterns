@@ -1,3 +1,5 @@
+package containers
+
 class ImageContainer {
     private var image = ""
     fun setImage(imageUrl : String) {

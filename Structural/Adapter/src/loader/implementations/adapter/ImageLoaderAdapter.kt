@@ -1,3 +1,10 @@
+package loader.implementations.adapter
+
+import advancedLoader.implementations.JpegLoader
+import advancedLoader.implementations.PngLoader
+import containers.ImageContainer
+import loader.interfaces.ImageLoader
+
 class ImageLoaderAdapter : ImageLoader {
     private val pngLoader = PngLoader()
     private val jpegLoader = JpegLoader()

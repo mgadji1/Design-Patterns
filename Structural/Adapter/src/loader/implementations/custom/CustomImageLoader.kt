@@ -1,3 +1,9 @@
+package loader.implementations.custom
+
+import loader.implementations.adapter.ImageLoaderAdapter
+import containers.ImageContainer
+import loader.interfaces.ImageLoader
+
 class CustomImageLoader : ImageLoader {
     private val adapter = ImageLoaderAdapter()
 

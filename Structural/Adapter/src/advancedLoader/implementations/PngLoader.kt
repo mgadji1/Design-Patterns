@@ -1,3 +1,8 @@
+package advancedLoader.implementations
+
+import containers.ImageContainer
+import advancedLoader.interfaces.AdvancedImageLoader
+
 class PngLoader : AdvancedImageLoader {
     override fun loadPng(imageUrl: String, container: ImageContainer) {
         container.setImage(imageUrl)
